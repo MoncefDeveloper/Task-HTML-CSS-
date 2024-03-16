@@ -1,4 +1,5 @@
 :root {
+    /* Define CSS variables */
     --main-font: "Poppins", sans-serif;
     --font-size-small: 12px;
     --font-size-medium: 16px;
@@ -10,14 +11,13 @@
 
     --body-bg-color: #fff;
     --text-black: #000;
-    --text-gray-dark: #1C1C1C;
+    --text-gray-dark: #1c1c1c;
     --text-gray-light: #525252;
-    --input-bg-color: #F0EDFFCC;
+    --input-bg-color: #f0edffcc;
     --placeholder-color: #a29dbcad;
-    --bg-gradient: linear-gradient(to right, #9181F4, #5038ED);
-    --border-color: #F0EDFF;
+    --bg-gradient: linear-gradient(to right, #9181f4, #5038ed);
+    --border-color: #f0edff;
     --right-side-text-color: #fff;
-
 }
 
 * {
@@ -31,16 +31,15 @@ body {
 }
 
 .login-section {
-
     width: 100%;
     height: 100svh;
     font-family: var(--main-font);
     overflow: hidden;
     color: var(--text-black);
     display: flex;
-
 }
 
+/* Left side container styles */
 .login-section .left-side {
     display: flex;
     align-items: center;
@@ -50,7 +49,6 @@ body {
     width: 50%;
     height: 100%;
     overflow: hidden;
-
 }
 
 .login-section .left-side .content-box {
@@ -63,7 +61,6 @@ body {
     justify-content: center;
 }
 
-
 .login-section .left-side .content-box b {
     color: var(--text-gray-dark);
 }
@@ -71,8 +68,7 @@ body {
 .login-section .left-side .content-box .header {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-
+    gap: 0.5rem;
 }
 
 .login-section .left-side .content-box .header .login-title {
@@ -86,6 +82,7 @@ body {
     font-size: var(--font-size-medium);
 }
 
+/* Login form styles */
 .login-section .left-side .content-box .my-form {
     display: flex;
     flex-direction: column;
@@ -96,7 +93,7 @@ body {
 }
 
 .login-section .left-side .content-box .my-form .input-group {
-    background-color: #F0EDFFCC;
+    background-color: #f0edffcc;
     display: flex;
     gap: 1rem;
     border-radius: var(--border-radius);
@@ -124,7 +121,6 @@ body {
     outline: none;
     width: 100%;
     font-size: var(--font-size-medium);
-
     height: 100%;
 }
 
@@ -148,8 +144,6 @@ body {
     color: #a29dbcad;
 }
 
-
-
 .login-section .left-side .content-box .my-form .login-btn {
     color: var(--body-bg-color);
     background-image: var(--bg-gradient);
@@ -167,6 +161,7 @@ body {
     font-weight: var(--font-weight-bold);
 }
 
+/* Social media login styles */
 .login-section .left-side .content-box .social-media-login {
     gap: 1rem;
     border: none;
@@ -179,17 +174,15 @@ body {
 
 .login-section .left-side .content-box .social-media-login .legend-title {
     font-size: var(--font-size-medium);
-
     color: var(--text-gray-light);
 }
 
 .login-section .left-side .content-box .social-media-login .social-media-box {
-
     display: flex;
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     cursor: pointer;
@@ -212,19 +205,19 @@ body {
     color: var(--text-gray-dark);
 }
 
+/* Right side container styles */
 .login-section .right-side {
     background-image: url(assets/images/background.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 50%;
-    color: var(--body-bg-color);
+    color: var(--right-side-text-color);
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-
 }
 
 .login-section .right-side .content-box {
@@ -233,10 +226,10 @@ body {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-radius: var(--border-radius-large);
-    border: solid 1px #FFFFFF85;
+    border: solid 1px #ffffff85;
     position: relative;
     padding: 2rem;
-    background-color: #FFFFFF36;
+    background-color: #ffffff36;
     width: 412px;
     height: 524px;
 }
